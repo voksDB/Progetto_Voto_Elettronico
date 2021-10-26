@@ -22,5 +22,8 @@ public class Utente {
 		System.out.println(name + "sta votando..");
 	}
 
+
+	public void provoPush(){}
+
 }
 
