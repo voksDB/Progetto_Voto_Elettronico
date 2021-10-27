@@ -28,6 +28,11 @@ public class Main {
 		Elettore mirco = new Elettore("mirco", 20, "T29BSSJDDHFA2FHS", "123");
 		Elettore maddalena = new Elettore("maddalena", 20, "C29BSSJDDHFA2FHS", "123");
 
+
+		/**il sistema in cui ciascun elettore può votare è assolutamente da rivedere, l'idea è che per votare in maniera "ordinale" ciascun
+		elettore mette in ordine i candidati in un array che in futuro dovra assolutamente essere un Set(senno posso votare piu volte la stessa persona)
+		il candidato messo nella posizione 1 dell'array si aggiudica 1 punto, quello in seconda posizione 2 punti e cosi via..
+		*/
 		paolo.vota(votazione,  new Candidato[]{giacomo, luca, giovanni});
 		fabio.vota(votazione,  new Candidato[]{luca, giacomo, giovanni});
 		mirco.vota(votazione,  new Candidato[]{luca, giacomo, giovanni});
