@@ -1,21 +1,31 @@
 package assignment2;
 
+import java.util.Map;
 
-//questo utente è un vero appassionato di elezioni, si registra e quindi può vedere i risultati
+//questo utente ï¿½ un vero appassionato di elezioni, si registra e quindi puï¿½ vedere i risultati
 public class Elettore extends Utente {
 	
 	String password; 
-	String username; 
 
-	Elettore(String name, int age, String codFiscale,String username,String password) {
+
+	Elettore(String name, int age, String codFiscale,String password) {
 		super(name, age, codFiscale);
-		this.username = username;
 		this.password = password;
 	}
 	
 	
-	public void risultati(String utente,String password){
-		System.out.println("si allora ha vinto salvini, contento?");
+	public void vota(Ordinale o, Candidato[] c){
+
+		
+
+		if(c.length !=  o.getCandidati().keySet().size()) throw new IllegalArgumentException("Devi ordinare tutti i candidati della votazione");
+
+
+		for(int i = 0; i<c.length; i++){
+			o.getCandidati().put(c[i], o.getCandidati().get(c[i])+i+1);
+		}
+
+
 	}
 	
 	

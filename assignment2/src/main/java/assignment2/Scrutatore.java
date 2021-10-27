@@ -5,20 +5,24 @@ package assignment2;
 
 import java.util.ArrayList;
 
-//eh lui è il master delle elezioni, può crearle e gestirle insomma
-public class Scrutatore extends Elettore{
+//eh lui ï¿½ il master delle elezioni, puï¿½ crearle e gestirle insomma
+public class Scrutatore extends Utente{
 	
 	//lista di sessioni che l'utente ha creato, ho fatto classe apposita
-	ArrayList<Elezione> elezioni = new ArrayList<Elezione>();
 	
 	
-	Scrutatore(String name, int age, String codFiscale, String username, String password,Elezione elezione) {
-		super(name, age, codFiscale, username, password);
-		elezioni.add(elezione);
+	
+	Scrutatore(String name, int age, String codFiscale) {
+		super(name, age, codFiscale);
+		
 	}
 
-	public void creaElezione(int durata,int nomeElezione) {
-		System.out.println("si si si,fidati ho creato un'elezione");
+	public Ordinale creaVotazioneOrdinale(String nomeElezione) {
+		return new Ordinale(nomeElezione);
+	}
+
+	public void stampaRisultato(Votazione v){
+		
 	}
 	
 }
