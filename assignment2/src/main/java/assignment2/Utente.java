@@ -7,7 +7,10 @@ import java.util.Objects;
  * 			 L'utente è dotato di un nome, codice fiscale e di un età
  */
 public class Utente {
-	
+		/**
+	 * Funzione di astrazione: FA(age, name, codFiscale) = Utente di età= age, nome= name, codice fiscale= codFiscale
+	 * Invariante di rappresentazione: nome,età, codice fiscale non nulli
+	 */
 	//CAMPI
 	private int age;
 	private String name;
