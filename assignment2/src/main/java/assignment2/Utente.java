@@ -2,16 +2,25 @@ package assignment2;
 
 import java.util.Objects;
 
-//magari utente semplice che o va in presenza, o vota 1 volta senza registrarsi
+/**
+ * Overview: Le istanze di questa classe rappresentano un Utente
+ * 			 L'utente è dotato di un nome, codice fiscale e di un età
+ */
 public class Utente {
 	
-
+	//CAMPI
 	private int age;
 	private String name;
 	private String codFiscale;
 
 	
-	
+	/**
+	 * Crea una nuova istanza Utente
+	 * @param name nome dell'utente
+	 * @param age età dell'utente
+	 * @param codFiscale codice fiscale
+	 * @throws NullPointerException se uno dei parametri non viene specificato
+	 */
 	Utente(String name,int age,String codFiscale){
 		Objects.requireNonNull(name);
 		Objects.requireNonNull(age);
@@ -23,10 +32,18 @@ public class Utente {
 		this.codFiscale = codFiscale;
 	}
 	
+	/**
+	 * Restituisce il codice fiscale dell'utente this
+	 * @return il codice fiscale
+	 */
 	public String getCodiceFiscale(){
 		return this.codFiscale;
 	}
 
+	/**
+	 * restituisce il nome dell'utente this
+	 * @return nome dell'utente
+	 */
 	public String getNome(){
 		return this.name;
 	}
@@ -37,6 +54,9 @@ public class Utente {
 	}
 
 	@Override
+	/**
+	 * Due utenti sono uguali se hanno lo stesso codice fiscale
+	 */
 	public boolean equals(Object obj){
 
         if(!(obj instanceof Utente)) return false;
