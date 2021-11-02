@@ -1,4 +1,3 @@
-package assignment2;
 
 /**
  * overview: Le istanze di questa clase rappresentano un Candidato.

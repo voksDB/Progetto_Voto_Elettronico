@@ -1,4 +1,3 @@
-package assignment2;
 
 import java.util.Objects;
 import java.util.Set;
@@ -13,6 +12,8 @@ public class Elettore extends Utente {
 	 * Funzione di astrazione: FA(nome,cognome,codice fiscale, pasword) = Elettore con nome=nome, cognome=cognome, password=password, CF= CF
 	 * Invariante di rappresentazione: Password non nulla
 	 */
+	
+
 	
 
 	 //CAMPI

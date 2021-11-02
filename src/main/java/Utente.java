@@ -1,4 +1,3 @@
-package assignment2;
 
 import java.util.Objects;
 
@@ -9,7 +8,7 @@ import java.util.Objects;
 public class Utente {
 		/**
 	 * Funzione di astrazione: FA(age, name, codFiscale) = Utente di età= age, nome= name, codice fiscale= codFiscale
-	 * Invariante di rappresentazione: nome,età, codice fiscale non nulli
+	 * Invariante di rappresentazione: nome,età, codice fiscale
 	 */
 	//CAMPI
 	private int age;
