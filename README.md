@@ -1,4 +1,3 @@
 # Progetto_Voto_Elettronico
 
-
-chi legge compila il readme lol 
+Progetto di creazione sistema per il voto elettronico
