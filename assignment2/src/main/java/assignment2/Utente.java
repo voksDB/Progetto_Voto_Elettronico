@@ -7,7 +7,7 @@ import java.util.Objects;
  * 			 L'utente è dotato di un nome, codice fiscale e di un età
  */
 public class Utente {
-		/**
+	/**
 	 * Funzione di astrazione: FA(age, name, codFiscale) = Utente di età= age, nome= name, codice fiscale= codFiscale
 	 * Invariante di rappresentazione: nome,età, codice fiscale non nulli
 	 */
@@ -51,6 +51,14 @@ public class Utente {
 		return this.name;
 	}
 	
+	/**
+	 * @return l'et� dell'utente
+	 */
+	public int getAge() {
+		return this.age;
+	}
+	
+	
 	@Override
 	public String toString(){
 		return "nome: " + name + " eta: " + age + " Codice Fiscale: "+ codFiscale;
@@ -65,11 +73,14 @@ public class Utente {
         if(!(obj instanceof Utente)) return false;
         Utente u = (Utente) obj;
         return u.getCodiceFiscale().equals(codFiscale);
-
     }
-
-
 	
+	@Override
+	public int hashCode() {
+		return  codFiscale.hashCode() ;
+	}
+	
+
 
 }
 

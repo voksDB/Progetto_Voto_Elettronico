@@ -34,6 +34,19 @@ public class Elettore extends Utente {
 		this.password = password;
 	}
 	
+	
+	/**
+	 * verifica le credenziali dell'utente e 
+	 * permette all'elettore di accedere all'elezione desiderata
+	 * 
+	 * @throws IncorrectPasswordException se la password non corrisponde alla password dell'utente
+	 * @param o la votazione a cui si vuole accedere 
+	 * @param password inserita dall'utente
+	 */
+	public void accediVotazione(Ordinale o,String password){
+		if(password != this.password) throw new IncorrectPasswordException("la password inserita non è corretta");
+	}
+	
 	/**
 	 * Permette all'elettore di esprimere la sua preferenza di voto rispetto a dei
 	 * candidati in un elezione
@@ -41,8 +54,11 @@ public class Elettore extends Utente {
 	 * @param candidati candidati all'elezione
 	 */
 	public void vota(Ordinale o, Set<Candidato> candidati){
-
+		
 	}
+	
+	
+	
 	
 	
 

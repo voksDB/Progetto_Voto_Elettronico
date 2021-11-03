@@ -35,9 +35,7 @@ public abstract class Votazione {
      * @param c candidato da aggiungere
      */
     public void addCandidato(Candidato c){
-
         candidati.put(c, 0);
-
     }
     
 
