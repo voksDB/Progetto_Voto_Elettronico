@@ -1,3 +1,5 @@
 # Progetto_Voto_Elettronico
 
-Progetto di creazione sistema per il voto elettronico
+Strumento elettronico per il voto a distanza e in presenza.\
+specifica del progetto di laboratorio di ingegnieria del software\
+AA: 2021/22
