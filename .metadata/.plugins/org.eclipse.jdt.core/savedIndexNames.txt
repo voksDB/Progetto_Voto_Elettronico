@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Admin\eclipse-workspace\Progetto_Voto_Elettronico\.metadata\.plugins\org.eclipse.jdt.core
+410141141.index
+1865797976.index
+3413725848.index
